@@ -6,7 +6,7 @@ eyear=gets.chomp.to_i
 
 current_year=syear
 
-while current_year < eyear
+while current_year <= eyear
 	testyear=false
 	divby4=(current_year%4==0)
 	divby100=(current_year%100==0)
