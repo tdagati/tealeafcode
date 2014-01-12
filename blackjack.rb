@@ -99,10 +99,13 @@ end
 
 	# Hit outcome
 	new_card = deck.pop
-	puts "Dealing cards to Player 1: #{new_card}"
+	puts ""
+	puts "=> Dealing cards to Player 1: #{new_card}"
 	mycards << new_card
 	mytotal = calculate_total(mycards)
-	puts "Your total is now: #{mytotal}"
+	puts ""
+	puts "=> Your total is now: #{mytotal}"
+	puts ""
 
 if mytotal == 21
 	puts "Congratulations, you hit Blackjack! You win!"
@@ -122,10 +125,13 @@ end
  while dealertotal < 17
 	#hit
 	new_card = deck.pop
-	puts "Dealing new card: #{new_card}"
+	puts ""
+	puts "=> Dealing new card: #{new_card}"
 	dealercards << new_card
 	dealertotal = calculate_total(dealercards)
-	puts "Dealer total is now: #{dealertotal}"
+	puts ""
+	puts "=> Dealer total is now: #{dealertotal}"
+	puts ""
 
 	if dealertotal == 21
 		puts "Dealer hits Blackjack. You lose!"
@@ -146,7 +152,7 @@ end
 
 	puts "Your cards: "
 		mycards.each do |card|
-			puts "#{card}"
+			puts "=> #{card}"
 		end
 		puts ""
 
